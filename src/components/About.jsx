@@ -10,7 +10,7 @@ const About = () => {
       icon: <RiCodeSSlashLine />,
       title: "Front End Skills",
       description:
-        "HTML, CSS, Javascript, Tailwind, React.Js, Readux Toolkit, Next.js, Git",
+        "HTML, CSS, Javascript, Tailwind, React.Js, Readux Toolkit and Version Control Tools",
     },
     {
       id: 2,
