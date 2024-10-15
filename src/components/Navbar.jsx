@@ -61,8 +61,10 @@ const Navbar = () => {
       </div>
       <nav
         ref={ref}
-        className={`w-full fixed px-5 lg:px-[8%] py-4 flex items-center justify-between z-10 dark:text-white dark:bg-black ${
-          scroll ? "bg-white opacity-50 backgroud-blur-lg shadow-sm text-black" : ""
+        className={`w-full fixed px-5 lg:px-[8%] py-4 flex items-center justify-between z-10 dark:text-white dark:bg-darkTheme ${
+          scroll
+            ? "bg-white opacity-50 backgroud-blur-lg shadow-sm text-black"
+            : ""
         }`}
       >
         <h1 className="text-xl font-semibold font-ovo sm:text-3xl">
@@ -70,8 +72,8 @@ const Navbar = () => {
         </h1>
 
         <ul
-          className={`hidden md:flex items-center gap-3 lg:gap-6 rounded-full px-12 py-3 font-ovo  dark:text-white dark:bg-black ${
-            scroll ? "text-black": " bg-white shadow-sm bg-opacity-50"
+          className={`hidden md:flex items-center gap-3 lg:gap-6 rounded-full px-12 py-3 font-ovo  dark:text-white dark:bg-darkTheme ${
+            scroll ? "text-black" : " bg-white shadow-sm bg-opacity-50"
           }`}
         >
           <li onClick={() => handleRouter("home", "/")}>
@@ -126,7 +128,7 @@ const Navbar = () => {
           id="sideMenu"
           className={`flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 ${
             sideMenu ? "translate-x-[-16rem]" : "translate-x-[16rem]"
-          } top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500`}
+          } top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:text-white dark:bg-darkTheme`}
         >
           <div className="absolute right-6 top-6">
             <RxCross1
@@ -134,11 +136,31 @@ const Navbar = () => {
               onClick={() => handleSideMenu()}
             />
           </div>
-          <li onClick={() => handleSideMenu()}>Home</li>
-          <li onClick={() => handleSideMenu()}>My Work</li>
-          <li onClick={() => handleSideMenu()}>Services</li>
-          <li onClick={() => handleSideMenu()}>About Us</li>
-          <li onClick={() => handleSideMenu()}>Contact My</li>
+          <li onClick={() => handleRouter("home", "/")}>
+            <AnchorLink className="anchor-link" offset={50} href="#/">
+              Home
+            </AnchorLink>
+          </li>
+          <li onClick={() => handleRouter("home", "/work")}>
+            <AnchorLink className="anchor-link" offset={50} href="#work">
+              My Work
+            </AnchorLink>
+          </li>
+          <li onClick={() => handleRouter("home", "/services")}>
+            <AnchorLink className="anchor-link" offset={50} href="#services">
+              Services
+            </AnchorLink>
+          </li>
+          <li onClick={() => handleRouter("home", "/about")}>
+            <AnchorLink className="anchor-link" offset={50} href="#about">
+              About me
+            </AnchorLink>
+          </li>
+          <li onClick={() => handleRouter("home", "/contact")}>
+            <AnchorLink className="anchor-link" offset={50} href="#contact">
+              Contact Us
+            </AnchorLink>
+          </li>
         </ul>
       </nav>
     </>

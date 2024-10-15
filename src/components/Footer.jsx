@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mt-20  dark:text-white dark:bg-black">
+    <div className="mt-20  dark:text-white dark:bg-darkTheme">
       <div className="text-center">
       <h1 className="text-xl font-semibold font-ovo sm:text-3xl mb-2">
           Noman Ahmed
@@ -17,7 +17,7 @@ const Footer = () => {
         <p className="font-ovo">© 2024 Noman Ahmed. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0 font-ovo">
           <li>
-            <a href="https://www.linkedin.com/in/nomanahmed7373/" target="_blank">
+            <a href="https://www.linkedin.com/in/noman7373/" target="_blank">
               Linkedin
             </a>
           </li>

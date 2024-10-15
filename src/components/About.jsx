@@ -26,13 +26,16 @@ const About = () => {
     },
   ];
   return (
-    <div id="about" className="w-full px-[12%] py-[30px]  dark:text-white dark:bg-black">
+    <div
+      id="about"
+      className="w-full px-[12%] py-[30px] mt-28 dark:text-white dark:bg-darkTheme"
+    >
       <h4 className="text-center mb-2 text-lg font-ovo">Introduction</h4>
       <h2 className="text-center text-5xl font-ovo">About Me</h2>
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div className="max-w-max mx-auto relative">
           <img
-            src="/images/my-dp2.jpg"
+            src="/images/profile.jpg"
             alt="userDp"
             className="w-64 sm:w-80 rounded-3xl max-w-none"
           />
@@ -64,7 +67,9 @@ const About = () => {
                 className="border-[0.5px] border-gray-400 rounded-xl cursor-pointer p-6 hover:bg-lightHover hover:text-black hover:-translate-y-1 duration-500 hover:shadow-black "
               >
                 {icon}
-                <h3 className="font-semibold my-4 hover:text-black ">{title}</h3>
+                <h3 className="font-semibold my-4 hover:text-black ">
+                  {title}
+                </h3>
                 <p className="font-semibold hover:text-black ">{description}</p>
               </li>
             ))}

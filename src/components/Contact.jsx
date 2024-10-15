@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full px-[12%] py-10 scroll-mt-20  bg-no-repeat bg-[length:90%_auto] bg-center dark:text-white dark:bg-black"
+      className="w-full px-[12%] py-10 scroll-mt-20  bg-no-repeat bg-[length:90%_auto] bg-center dark:text-white dark:bg-darkTheme"
     >
       <h4 className="text-center mb-2 text-lg font-ovo">Connect with me</h4>
       <h2 className="text-center text-5xl font-ovo">Get in touch</h2>
@@ -42,7 +42,7 @@ const Contact = () => {
             autoComplete="name"
             type="text"
             placeholder="Enter Your Name"
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-500 rounded-md dark:text-white dark:bg-black"
+            className="flex-1 p-3 outline-none border-[0.5px] border-gray-500 rounded-md dark:text-white dark:bg-darkTheme"
           />
           <input
             name="email"
@@ -50,13 +50,13 @@ const Contact = () => {
             autoComplete="email"
             type="email"
             placeholder="Enter Your Email"
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-500 rounded-md dark:text-white dark:bg-black"
+            className="flex-1 p-3 outline-none border-[0.5px] border-gray-500 rounded-md dark:text-white dark:bg-darkTheme"
           />
         </div>
         <textarea
           rows={6}
           placeholder="Enter your msg"
-          className="w-full p-5 outline-none border-[0.5px] border-gray-400 rounded-md mb-6 dark:text-white dark:bg-black"
+          className="w-full p-5 outline-none border-[0.5px] border-gray-400 rounded-md mb-6 dark:text-white dark:bg-darkTheme"
           required
         ></textarea>
         <button

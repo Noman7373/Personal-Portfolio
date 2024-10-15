@@ -4,11 +4,11 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="w-full px-[12%] py-10 scroll-mt-20  dark:text-white dark:bg-black"
+      className="w-full px-[12%] py-10 scroll-mt-20  dark:text-white dark:bg-darkTheme"
     >
       <h4 className="text-center mb-2 text-lg font-ovo">What i offer</h4>
       <h2 className="text-center text-5xl font-ovo">My Services</h2>
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12  dark:text-white dark:bg-black font-ovo ">
+      <p className="text-center max-w-2xl mx-auto mt-5 mb-12  dark:text-white dark:bg-darkTheme font-ovo ">
         I am a front end web developer.Skilled in transforming design concepts
         into dynamic, functional interfaces
       </p>

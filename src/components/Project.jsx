@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <div
       id="work"
-      className="w-full px-[12%] py-10 scroll-mt-20  dark:text-white dark:bg-black"
+      className="w-full px-[12%] py-10 scroll-mt-20  dark:text-white dark:bg-darkTheme"
     >
       <h4 className="text-center mb-2 text-lg font-ovo ">My portfolio</h4>
       <h2 className="text-center text-5xl font-ovo">My latest work</h2>
@@ -18,7 +18,7 @@ const Project = () => {
         <a
           href="https://fintrackexpensetrackhq.netlify.app/"
           target="_blank"
-          className=" w-[400px] aspect-square bg-[url(/images/work-2.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          className=" w-[400px] aspect-square bg-[url(/images/expense.jpg)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
         >
           <div>
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
@@ -26,10 +26,10 @@ const Project = () => {
                 <h2 className="font-semibold dark:text-black">
                   Expense Tracker App
                 </h2>
-                <p className="text-sm text-gray-700">Web design</p>
+                <p className="text-sm text-gray-700">Web App</p>
               </div>
               <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow=[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                <BiSend />
+                <BiSend className="dark:text-black" />
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Project = () => {
               <p className="text-sm text-gray-700">Web design</p>
             </div>
             <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow=[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-              <BiSend />
+              <BiSend className="dark:text-black" />
             </div>
           </div>
         </div>
